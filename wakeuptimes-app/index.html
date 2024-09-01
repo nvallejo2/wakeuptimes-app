@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WakeUpTimes App</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <h1>Welcome to WakeUpTimes App!</h1>
@@ -13,17 +16,19 @@
         if you've completed several cycles prior to waking up.
         </p>
         <p>If you go to bed now, when should you wake up?</p>
+
+        <!-- id is unique --> 
         <button id="calc-btn">Calculate</button>
- 
-        <script>
-            const calcBtn = document.getElementById("calc-btn");
-            calcBtn.onclick = handleClick;
- 
-            function handleClick() {
-                console.log("Bam!");
-                window.alert("Boo!");
-            }
-        </script>
+        
+        <p>
+            If you go to bed right now<sup>*</sup>, try to wake up at one of these times:
+        </p>
+          <div id="wakeup-hours-div" class="wakeup-hours">
+          </div>
+          <p>
+            <sup>*</sup>It takes the average human fourteen minutes to fall asleep.
+        </p>
+        <script src="index.js"></script>
     </body>
 </html>
 
